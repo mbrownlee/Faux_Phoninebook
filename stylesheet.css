@@ -1,0 +1,26 @@
+body {
+    background-image: url("logo.jpeg");
+    background-repeat: no-repeat, center;
+    background-size: auto;
+    opacity: 0.85;
+    background-color: blue;
+  }
+
+  
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+  .homepage {
+      background-color: white;
+      width: fit-content;
+      margin-left: 80px;
+      padding: 35px;
+  }
