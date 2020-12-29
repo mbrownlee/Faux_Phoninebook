@@ -13,8 +13,8 @@
 
 
     include_once 'db_sql.php';
-    if (isset($_GET['id'])) {
-        $id = mysqli_real_escape_string($init, $_GET['id']);
+    if (isset($_GET['office_id'])) {
+        $id = mysqli_real_escape_string($init, $_GET['office_id']);
         $query2 = "SELECT * FROM staff INNER JOIN offices ON offices.id = staff.office_id WHERE offices.id = '$id';";
 
 
