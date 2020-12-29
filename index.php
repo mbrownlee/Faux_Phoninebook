@@ -12,7 +12,7 @@
         
         while ($row2 = mysqli_fetch_array($result2)) {
             echo "<h2>" . $row2['region_name'] . "</h2>" . "</br>";
-            $query = "SELECT o.id AS officeId, o.office_name, o.region_id FROM offices o INNER JOIN Region r ON r.id = o.region_id;";
+            $query = "SELECT o.id AS officeId, o.office_name, o.region_id FROM offices o INNER JOIN Region r ON r.id = o.region_id WHERE r.id = " . $row2['regionId'];
             $result = mysqli_query($init, $query);
             while ($row = $result->fetch_assoc()) {
               
