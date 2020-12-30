@@ -2,6 +2,10 @@
 
 <body>
     <div class=homepage>
+    <!-- <center><br>
+  <marquee behavior="scroll" direction="left"><font size="8" >Faux Phoninbook</font></marquee>  
+  <br><br>
+</center> -->
         <h1>Faux Phoninbook</h1>
         <?php
         include_once 'db_sql.php';
